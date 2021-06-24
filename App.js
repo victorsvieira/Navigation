@@ -28,10 +28,6 @@ function TelaCanal({navigation}){
   )
 }
 
-function openScreen({navigation}){
-  navigation.navigate('Canal');
-}
-
 export default function App() {
   return (
     //TODO O RETORNO FICA ENVOLVIDO DENTRO DE UM <NavigationContainer>, AO INVÉS DE UMA <View>
@@ -46,39 +42,3 @@ export default function App() {
     </NavigationContainer>
   );
 }
-
-//-------------------- COMO FAZER FUNCIONAR UMA FLATLIST !!!! --------------------
-// funtion App(){
-//     const posts = [
-//         {
-//             id: '1',
-//             author: 'mary.silva.585',
-//             likes: '31',
-//             description: 'Foram mais 365 dias da minha história e sinto uma enorme gratidão por cada um deles.',
-//         }
-//     ]
-
-
-//     function renderItem({item: post}) {
-//         return(
-//             <View style={{flex:1, justifyContent: 'center', alignItems:'center'}}>
-//                 <Text>{post.author}</Text>
-//                 <Text>{post.likes}</Text>
-//                 <Text>{post.description}</Text>
-//             </View>
-//         );
-//     }
-
-//     return(
-//         <View>
-//             <FlatList 
-//                 data={posts}
-//                 keyExtractor= {(item) => {item.id}}
-//                 renderItem={renderItem}
-//             />
-//         </View>
-//     );
-    
-// }
-
-// export default App;
